@@ -12,3 +12,5 @@
 
 -cuarto paso: integrar js con html
 
+-agregar traversing  (creacion de elementos)
+
