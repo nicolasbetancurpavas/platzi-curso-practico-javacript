@@ -27,15 +27,13 @@ function PERIMETROCIRCULO(radio) {
 
 let AREACIRCULO = (radio) => "el area de tu circulo es: " + radio ** 2 * Math.PI + "cm²"
 
-
 //traversing
 
 let cuadrado = document.getElementById("cuadrado")
 let triangulo = document.getElementById("triangulo")
 let circulo = document.getElementById("circulo")
 
-//llamando modulo
-
+//llamando modulo 
 
 let base = document.getElementById("menu")
 
@@ -65,6 +63,7 @@ cuadrado.addEventListener("click", function (e) {
    btn.textContent = "Calcular"
    btn.classList.add("btn-form")
 
+
    label.appendChild(text)
    formulario.appendChild(label)
    formulario.appendChild(divicion)
@@ -75,7 +74,7 @@ cuadrado.addEventListener("click", function (e) {
 
    btn.addEventListener("click", function (e) {
       console.log(input.value)
-      e.preventDefault()
+      e.preventDefault() //prevenir recargo de pagina 
       let resultadoPerimetro = document.getElementById("resultado-perimetro")
       let resultadoArea = document.getElementById("resultado-area")
       console.log(diametroCirculo(input.value))
@@ -85,6 +84,29 @@ cuadrado.addEventListener("click", function (e) {
       }
    })
 
+   e.preventDefault()
+})
+
+//Circulo 
+
+circulo.addEventListener("click", function(e){
+   let addresultados = document.getElementById("resultaditos")
+   console.log(addresultados)
+   addresultados.innerHTML=""
+   //agregando el otro resultado
+    
+   let divresultados = document.createElement("div")
+   divresultados.classList.add("item__resultados")
+   let descripcion = document.createElement("p")
+   descripcion.textContent="Diametro"
+   descripcion.classList.add("item__resultado-parrafo")
+   let espacioresultado = document.createElement("h3")
+   espacioresultado.classList.add("item__resultado-title")
+   espacioresultado.setAttribute("resultado-area")
+   
+   divresultados.appendChild(espacioresultado)
+   divresultados.appendChild(descripcion)
+   addresultados.appendChild(divresultados)
    e.preventDefault()
 })
 

@@ -14,3 +14,16 @@
 
 -agregar traversing  (creacion de elementos)
 
+
+## taller 2 porcentajes y descuentos 
+
+-primero definir formulas
+
+-segundo paso:implementar la formulas en javascript
+
+-tercer crear funciones
+
+cuartos passos: integrar js con html
+
+
+

@@ -6,34 +6,32 @@
 
 html {
     font-size: 62.5%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 #body {
-    background: #eae8e8;
+    background: #212121;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .title__header {
     width: 100%;
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
     padding: 1rem;
-    background: rgb(200, 193, 193);
-    background: linear-gradient(0deg, rgb(230, 227, 227) 36%, rgba(43, 186, 205, 1) 100%);
-    color: rgb(159, 151, 151);
-    text-shadow: 1px 2px 0 #969696, 1px 10px 3px #aba8a8;
+    background: rgb(15, 15, 15);
+    background: linear-gradient(0deg, rgb(33, 33, 33) 36%, rgba(43, 186, 205, 1) 100%);
+    color: rgb(93, 107, 110);
+    text-shadow: 1px 2px 0 #303030, 1px 10px 3px #454545;
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
 
 .nav__title {
     text-align: center;
-    color: transparent;
-    background: #666666;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 5px rgb(38, 172, 190);
+    color: rgb(38, 172, 190);
 }
 
 .nav__main {
@@ -70,13 +68,11 @@ html {
 }
 
 .container__nav {
-    background: rgb(233, 228, 228);
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
 
 .main {
-
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
@@ -88,6 +84,13 @@ html {
     height: 100px;
 }
 
+.formulario-triangulo{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    height: 100px;
+}
+
 .label_text {
     display: flex;
     align-items: center;
@@ -95,12 +98,8 @@ html {
 }
 
 .tex {
-    color: transparent;
-    background: #666666;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: rgb(222, 218, 218);
 }
 
 .input-lado {
@@ -111,6 +110,8 @@ html {
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
+    background-color: #212121;
+    color: rgb(38, 172, 190);
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
@@ -128,11 +129,15 @@ html {
     height: 60%;
     border-radius: 0.5rem;
     border: 2px rgb(38, 172, 190) solid;
-    background-color: #555555;
+    background-color: #1a1919;
     color: #bfbcbc;
     font-weight: bold;
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
+}
+.btn-form:hover {
+  background-color: #bfbcbc;
+  color: #1a1919;
 }
 
 .resultados {
@@ -143,8 +148,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    height:22rem;
-    background-color: #d8d8d8;
+    height: 22rem;
     align-items: center;
     justify-content: center;
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
@@ -158,20 +162,14 @@ html {
 }
 
 .item__resultado-parrafo {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px rgb(38, 172, 190);
+    color:rgb(189, 194, 195);
+    text-shadow: 4px 4px 4px rgb(38, 172, 190);
+    font-size:1.6rem;
 }
 
 .item__resultado-title {
-    padding:1.4rem;
-    color: transparent;
-    background: #777676;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 0px 4px 11px -4px rgb(38, 172, 190);
-    box-shadow: 0px 4px 11px -4px rgb(38, 172, 190);
+    padding: 1.4rem;
+    border: 1px rgb(38, 172, 190)solid;
+    border-radius: 0.5rem;
+    color: #a3a1a1;
 }
