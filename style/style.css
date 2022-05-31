@@ -203,3 +203,21 @@ html {
 .item-contact{
   display:none;
 }
+
+.container-items-redes-sociales{
+    padding: 1rem;
+}
+
+.herramientas-desarrollo{
+    margin-top: 1rem;
+}
+
+.sobremi{
+    font-size:1.5rem;    
+}
+
+.container-about{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 1.2rem;
+}
