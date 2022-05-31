@@ -127,3 +127,7 @@
 .item__footer{
     border: none;
 }
+
+.item__resultado-title{
+    font-size: 2rem;
+}
