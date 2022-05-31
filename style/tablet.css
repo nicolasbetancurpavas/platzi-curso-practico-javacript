@@ -1,0 +1,129 @@
+.item__main {
+    font-size: 2rem;
+}
+
+.title__header {
+    font-size:6rem;
+}
+
+.nav__title {
+    font-size:3.5rem;
+    margin-bottom: 5rem;
+}
+
+.item__link {
+    width: 200px;
+}
+
+.container__nav {
+    padding: 3rem;
+}
+
+.tex {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(112, 116, 116);
+}
+
+.btn-form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.btn-form:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.item__resultado-parrafo {
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+
+.item__resultado-title {
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.resultados__container {
+    height: 400px;
+}
+
+.container-footer {
+    display: flex;
+    height: 380px;
+    position: static;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.item__footer {
+    width: 30%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(120, 118, 118);
+    text-align: center;
+    overflow: hidden;
+    margin:2rem;
+    padding: 3rem;
+}
+
+.img-footer {
+    width: 150px;
+}
+
+.item__title {
+    font-size: 2.5rem;
+}
+
+.container-items-redes-sociales {
+    margin-top: 10px;
+    height: 80px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-youtube {
+    margin: 4rem;
+}
+
+.bi-github {
+    margin-right: 2rem;
+}
+
+.container-about{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.herramientas-desarrollo{
+    display: flex;
+    margin-top: 2rem;
+    justify-content:center;
+    font-size:3.5rem;
+}
+
+.fa-js{
+    margin:1.6rem;
+}
+
+.item-contact{
+    display: block;
+}
+
+.item__footer{
+    border: none;
+}

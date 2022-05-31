@@ -84,9 +84,9 @@ html {
     height: 100px;
 }
 
-.formulario-triangulo{
+.formulario-triangulo {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1rem;
     height: 100px;
 }
@@ -125,6 +125,7 @@ html {
 }
 
 .btn-form {
+    text-align: center;
     width: 50%;
     height: 60%;
     border-radius: 0.5rem;
@@ -135,9 +136,10 @@ html {
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
+
 .btn-form:hover {
-  background-color: #bfbcbc;
-  color: #1a1919;
+    background-color: #bfbcbc;
+    color: #1a1919;
 }
 
 .resultados {
@@ -162,9 +164,9 @@ html {
 }
 
 .item__resultado-parrafo {
-    color:rgb(189, 194, 195);
+    color: rgb(189, 194, 195);
     text-shadow: 4px 4px 4px rgb(38, 172, 190);
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }
 
 .item__resultado-title {
@@ -172,4 +174,28 @@ html {
     border: 1px rgb(38, 172, 190)solid;
     border-radius: 0.5rem;
     color: #a3a1a1;
+}
+
+.container-footer{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top:2rem;
+    color: #454545;
+    margin-bottom:0px;
+}
+
+.img-footer{
+    display:none;
+}
+
+.item__footer{
+    font-size:1.4rem;
+    text-align:center;
+    justify-content: center;
+    border-right: 2px rgb(47, 47, 47) solid;
+}
+
+.item-contact{
+  display:none;
 }

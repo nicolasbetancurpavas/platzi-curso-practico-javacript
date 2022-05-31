@@ -58,7 +58,7 @@
 
 .img-producto {
     margin-top: 25px;
-    width:330px;
+    width:360px;
 }
 
 
@@ -145,6 +145,13 @@
     font-size:medium;
 }
 
+.price-new{
+    margin-left:10px;
+    font-weight: bold;
+    color:#992699;
+    font-size:medium;
+}
+
 .fa-percent {
     margin-left: 1rem;
     font-size: 2rem;
@@ -191,3 +198,4 @@
     -webkit-box-shadow: 0px 0px 15px 0px #912e91;
     box-shadow: 0px 0px 15px 0px #992699;
 }
+

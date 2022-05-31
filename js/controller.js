@@ -59,8 +59,7 @@ cuadrado.addEventListener("click", function (e) {
    let divicion2 = document.createElement("div")
    divicion2.classList.add("divicion-input")
    let btn = document.createElement("input")
-   btn.type = "submit"
-   btn.textContent = "Calcular"
+   btn.value = "Calcular"
    btn.classList.add("btn-form")
 
 
@@ -89,24 +88,4 @@ cuadrado.addEventListener("click", function (e) {
 
 //Circulo 
 
-circulo.addEventListener("click", function(e){
-   let addresultados = document.getElementById("resultaditos")
-   console.log(addresultados)
-   addresultados.innerHTML=""
-   //agregando el otro resultado
-    
-   let divresultados = document.createElement("div")
-   divresultados.classList.add("item__resultados")
-   let descripcion = document.createElement("p")
-   descripcion.textContent="Diametro"
-   descripcion.classList.add("item__resultado-parrafo")
-   let espacioresultado = document.createElement("h3")
-   espacioresultado.classList.add("item__resultado-title")
-   espacioresultado.setAttribute("resultado-area")
-   
-   divresultados.appendChild(espacioresultado)
-   divresultados.appendChild(descripcion)
-   addresultados.appendChild(divresultados)
-   e.preventDefault()
-})
 
