@@ -80,6 +80,11 @@ html {
 
 
 .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:400px;
+    align-items: center;
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
     box-shadow: 0px 4px 11px -4px #000000;
 }
@@ -91,11 +96,11 @@ html {
     height: 100px;
 }
 
-.formulario-triangulo {
+.formulario-T{
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    height: 100px;
+    justify-content: center;
+    padding:0.2rem;
+    height:100px;
 }
 
 .label_text {
@@ -104,14 +109,44 @@ html {
     width: 33.3%;
 }
 
+.label_text-T{
+    display: flex;
+    align-items: center;
+    width:50%;
+}
+
 .tex {
+    font-size:2rem;
     text-align: center;
-    color: rgb(222, 218, 218);
+    font-family: monospace;
+    color: rgb(130, 128, 128);
+}
+
+.tex-T{
+    font-size:1.5rem;
+    text-align: center;
+    font-family: monospace;
+    color: rgb(130, 128, 128);
 }
 
 .input-lado {
     width: 70%;
     height:100%;
+    border-radius: 1rem;
+    border: 1px rgb(38, 172, 190) solid;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #212121;
+    color: rgb(38, 172, 190);
+    -webkit-box-shadow: 0px 4px 11px -4px #000000;
+    box-shadow: 0px 4px 11px -4px #000000;
+}
+
+.input-lado-T{
+    margin-top:37px;
+    width:30%;
+    height:50%;
     border-radius: 1rem;
     border: 1px rgb(38, 172, 190) solid;
     font-size: 1.7rem;
@@ -155,6 +190,28 @@ html {
     border: none;
 }
 
+.btn-form-T{
+    margin-bottom: 1rem;
+    text-align: center;
+    width:100%;
+    font-size:1rem;
+    height:50px;
+    border-radius: 0.5rem;
+    border: 2px rgb(38, 172, 190) solid;
+    background-color: #1a1919;
+    color: #bfbcbc;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 4px 11px -4px #000000;
+    box-shadow: 0px 4px 11px -4px #000000;
+}
+
+.btn-form-T:hover{
+background-color: #37c235;
+ transition: background-color 2s ease;
+ border: none;   
+}
+
+
 .resultados {
     padding: 0;
 }
@@ -163,7 +220,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-top:1rem;
-    height:300px;
+    height:400px;
     align-items: center;
     justify-content: center;
     -webkit-box-shadow: 0px 4px 11px -4px #000000;
@@ -173,6 +230,7 @@ html {
 .item__resultados {
     text-align: center;
     width:50vw;
+    margin:2rem;
 }
 
 .item__resultado-parrafo {
