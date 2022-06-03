@@ -50,14 +50,16 @@
 }
 
 .item__resultado-title {
-    padding: 3rem;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content:center;
+    padding:3.2rem;
+    margin-right:50px;
+    margin-left:50px;
+    margin-bottom:1rem;
 }
 
-
-
 .resultados__container {
-    height: 400px;
+    height:600px;
 }
 
 .container-footer {
