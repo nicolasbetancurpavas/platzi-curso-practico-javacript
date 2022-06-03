@@ -41,6 +41,10 @@ console.log(base);
 
 cuadrado.addEventListener("click", function (e) {
 
+  // le bajo height al contenedor principal
+  let main = document.getElementById("menu")
+  main.style.height = "300px"
+  
   // oculto otro resultados
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
   let resultadoArea = document.getElementById("resultado-area");
@@ -96,6 +100,10 @@ cuadrado.addEventListener("click", function (e) {
 });
 
 circulo.addEventListener("click", function (e) {
+
+  // le bajo height al contenedor principal
+  let main = document.getElementById("menu")
+  main.style.height = "300px"
 
   // borro resultados anteriores
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
@@ -157,6 +165,9 @@ circulo.addEventListener("click", function (e) {
 });
 
 triangulo.addEventListener("click", function (e) {
+  // volver el height
+  let main = document.getElementById("menu")
+  main.style.height = "500px"
 
   // borro resultados anteriores
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
