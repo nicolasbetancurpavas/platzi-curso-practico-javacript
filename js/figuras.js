@@ -1,12 +1,8 @@
-
-console.group("Cuadrado");
-
+// cuadrado
 const perimetroCuadrado = (lado) => "el perimetro de tu cuadrado es: " + lado * 4 + "cm";
 const areaCuadrado = (lado) => "el area es de tu cuadrado es:" + lado ** 2 + "cm²";
 
-//codigo triangulo
-console.group("triangulo");
-
+//triangulo
 function perimetroTriangulo(l1, l2, base) {
   let sumalados = l1 + l2 + base;
   return "el perimetro de tu triangulo mide: " + sumalados + "cm";
@@ -14,11 +10,8 @@ function perimetroTriangulo(l1, l2, base) {
 
 let areaTriangulo = (base, altura) => "El area de un triangulo es:" + (base * altura) / 2 + "cm²";
 
-console.group("Circulo");
-
+//circulo
 let diametroCirculo = (radio) => "el diametro de tu circulo es: " + radio * 2 + "cm";
-
-//circuferencia
 
 function PERIMETROCIRCULO(radio) {
   const diametro = radio * 2;
@@ -27,8 +20,7 @@ function PERIMETROCIRCULO(radio) {
 
 let AREACIRCULO = (radio) => "el area de tu circulo es: " + radio ** 2 * Math.PI + "cm²";
 
-//traversing
-
+//traversing (boton a detectar)
 let cuadrado = document.getElementById("cuadrado");
 let triangulo = document.getElementById("triangulo");
 let circulo = document.getElementById("circulo");
@@ -44,8 +36,8 @@ cuadrado.addEventListener("click", function (e) {
   // le bajo height al contenedor principal
   let main = document.getElementById("menu")
   main.style.height = "300px"
-  
-  // oculto otro resultados
+
+  // oculto otros resultados
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
   let resultadoArea = document.getElementById("resultado-area");
   let resultadoDiametro = document.getElementById("resultado-diametro");
@@ -54,7 +46,7 @@ cuadrado.addEventListener("click", function (e) {
   resultadoArea.textContent = ""
   resultadoDiametro.textContent = ""
 
-  // oculto diamentro
+  // oculto diamentro (div diamentro)
   let baseResultados = document.getElementById("item_resultado-diametro");
   baseResultados.style.display = "none";
 
@@ -62,19 +54,24 @@ cuadrado.addEventListener("click", function (e) {
 
   let formulario = document.createElement("form");
   formulario.classList.add("formulario");
+
   let label = document.createElement("label");
   label.classList.add("label_text");
+
   let text = document.createElement("h4");
   text.classList.add("tex");
   text.textContent = "digitar cm lado del cuadrado";
+
   let divicion = document.createElement("div");
   divicion.classList.add("divicion-input");
+
   let input = document.createElement("input");
   input.classList.add("input-lado");
   input.type = "number";
 
   let divicion2 = document.createElement("div");
   divicion2.classList.add("divicion-input");
+  
   let btn = document.createElement("input");
   btn.value = "Calcular";
   btn.classList.add("btn-form");
@@ -122,19 +119,24 @@ circulo.addEventListener("click", function (e) {
 
   let formulario = document.createElement("form");
   formulario.classList.add("formulario");
+
   let label = document.createElement("label");
   label.classList.add("label_text");
+  
   let text = document.createElement("h4");
   text.classList.add("tex");
   text.textContent = "digitar radio de tu circulo";
+
   let divicion = document.createElement("div");
   divicion.classList.add("divicion-input");
+
   let input = document.createElement("input");
   input.classList.add("input-lado");
   input.type = "number";
 
   let divicion2 = document.createElement("div");
   divicion2.classList.add("divicion-input");
+
   let btn = document.createElement("input");
   btn.value = "Calcular";
   btn.classList.add("btn-form");
