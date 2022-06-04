@@ -72,8 +72,8 @@ cuadrado.addEventListener("click", function (e) {
   let divicion2 = document.createElement("div");
   divicion2.classList.add("divicion-input");
   
-  let btn = document.createElement("input");
-  btn.value = "Calcular";
+  let btn = document.createElement("button");
+  btn.textContent = "Calcular";
   btn.classList.add("btn-form");
 
   label.appendChild(text);
@@ -90,6 +90,7 @@ cuadrado.addEventListener("click", function (e) {
     if (input.value > 0) {
       resultadoPerimetro.textContent = perimetroCuadrado(input.value);
       resultadoArea.textContent = areaCuadrado(input.value);
+      e.preventDefault();
     }
   });
 
@@ -137,10 +138,10 @@ circulo.addEventListener("click", function (e) {
   let divicion2 = document.createElement("div");
   divicion2.classList.add("divicion-input");
 
-  let btn = document.createElement("input");
-  btn.value = "Calcular";
+  let btn = document.createElement("button");
+  btn.textContent = "Calcular";
   btn.classList.add("btn-form");
-
+  
   label.appendChild(text);
   formulario.appendChild(label);
   formulario.appendChild(divicion);
@@ -158,9 +159,9 @@ circulo.addEventListener("click", function (e) {
       resultadoDiametro.textContent = diametroCirculo(input.value);
       resultadoArea.textContent = AREACIRCULO(input.value);
       resultadoPerimetro.textContent = PERIMETROCIRCULO(input.value);
+      e.preventDefault();
     }
 
-    e.preventDefault();
   });
 
   e.preventDefault();
@@ -245,8 +246,9 @@ triangulo.addEventListener("click", function (e) {
 
   let divicion2 = document.createElement("div");
   divicion2.classList.add("divicion-input-T");
-  let btn = document.createElement("input");
-  btn.value = "Calcular";
+
+  let btn = document.createElement("button");
+  btn.textContent = "Calcular";
   btn.classList.add("btn-form-T");
 
   label.appendChild(text)
@@ -279,6 +281,7 @@ triangulo.addEventListener("click", function (e) {
     if (input.value > 0 && input2.value > 0 && input3.value > 0 && input4.value > 0) {
       resultadoArea.textContent = areaTriangulo(input3.value,input4.value)
       resultadoPerimetro.textContent = perimetroTriangulo(parseInt(input.value),parseInt(input2.value),parseInt(input3.value))
+      e.preventDefault();
     }
 
     e.preventDefault();
