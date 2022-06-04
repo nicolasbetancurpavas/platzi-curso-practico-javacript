@@ -16,7 +16,7 @@ let bdProductos = [
         precio: 14990000,
         descuento: 30
     },
-
+ 
     {
         DESC: "40%",
         nombre: "Duke 390cc 2022",
@@ -113,12 +113,12 @@ let right = document.querySelector(".movent-right") // manera de nexo del elemen
 let contendorScroll = document.querySelector(".container__products") // manera de nexo del elemento html por su clase
 
 left.addEventListener('click', (e) => {
-    contendorScroll.scrollLeft -= 150
+    contendorScroll.scrollLeft -= 85
 
 })
 
 right.addEventListener('click', (e) => {
-    contendorScroll.scrollLeft += 150
+    contendorScroll.scrollLeft += 85
     e.preventDefault()
 })
 
