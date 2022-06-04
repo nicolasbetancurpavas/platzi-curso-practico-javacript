@@ -81,7 +81,7 @@ bdProductos.forEach(function (producto) {
     descripcion.textContent = producto.descripcion
 
     let precio = document.createElement("h5")
-    let del = document.createElement("del")
+
     precio.textContent = "Precio antes: " + producto.precio + " $"
     precio.classList.add("price")
 
@@ -100,8 +100,7 @@ bdProductos.forEach(function (producto) {
     contenedor.appendChild(img)
     contenedor.appendChild(porcent)
     contenedor.appendChild(descripcion)
-    contenedor.appendChild(del)
-    del.appendChild(precio)
+    contenedor.appendChild(precio)
     contenedor.appendChild(div)
     div.appendChild(boton)
     div.appendChild(resultadoAhorro)
@@ -115,7 +114,7 @@ let contendorScroll = document.querySelector(".container__products") // manera d
 
 left.addEventListener('click', (e) => {
     contendorScroll.scrollLeft -= 150
- 
+
 })
 
 right.addEventListener('click', (e) => {
@@ -131,12 +130,42 @@ function sacarDescuento(cantidad, desc) {
     return descuentoAplicado
 }
 
-let nuevoprecio = document.querySelector(".price-new") // este clase la tienen  todas las card y solo me reconoce la primera cards
+let itemproducto = document.querySelector(".container__products") // este clase la tienen  todas las card y solo me reconoce la primera cards
 
-base.addEventListener("click", function (evento) {
-    if (evento.target.classList.contains("btn-car")) {
-        nuevoprecio.textContent = sacarDescuento(bdProductos[0].precio,bdProductos[0].descuento)
-        console.log("hola")
-    }
-  })
+ // buscando hijos
+
+//funciones para operar el descuento
+
+itemproducto.childNodes[1].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[1].childNodes[5].childNodes[1].textContent = sacarDescuento(12990000, 20) + " $Ahora"
+
+})
+
+itemproducto.childNodes[2].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[2].childNodes[5].childNodes[1].textContent = sacarDescuento(14990000, 30) + " $Ahora"
+
+})
+
+itemproducto.childNodes[3].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[3].childNodes[5].childNodes[1].textContent = sacarDescuento(25990000, 40) + " $Ahora"
+
+})
+
+itemproducto.childNodes[4].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[4].childNodes[5].childNodes[1].textContent = sacarDescuento(54990000, 50) + " $Ahora"
+
+})
+
+itemproducto.childNodes[5].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[5].childNodes[5].childNodes[1].textContent = sacarDescuento(59990000, 20) + " $Ahora"
+
+})
+
+itemproducto.childNodes[6].childNodes[5].childNodes[0].addEventListener("click", function (e) {
+    itemproducto.childNodes[6].childNodes[5].childNodes[1].textContent = sacarDescuento(99990000, 10) + " $Ahora"
+
+})
+
+
+
 
