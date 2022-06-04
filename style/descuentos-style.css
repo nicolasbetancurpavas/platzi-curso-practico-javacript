@@ -217,7 +217,8 @@
 
 .img-footer {
     width: 150px;
-    height: 120px;
+    height:120px;
+    color: transparent;
     margin-left: auto;
     margin-right: auto;
 }
@@ -288,6 +289,7 @@
 
 .link-p{
     font-size:0.8rem;
+    margin:1rem;
     color: #494747;
 }
 

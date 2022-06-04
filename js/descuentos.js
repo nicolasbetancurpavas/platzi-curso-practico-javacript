@@ -115,7 +115,7 @@ let contendorScroll = document.querySelector(".container__products") // manera d
 left.addEventListener('click', (e) => {
     contendorScroll.scrollLeft -= 85
 
-})
+})  
 
 right.addEventListener('click', (e) => {
     contendorScroll.scrollLeft += 85
