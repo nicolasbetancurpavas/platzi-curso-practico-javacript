@@ -85,12 +85,26 @@ bdProductos.forEach(function (producto) {
     precio.textContent = "Precio antes: " + producto.precio + " $"
     precio.classList.add("price")
 
+    let diviciocheck  = document.createElement("div")
+    diviciocheck.classList.add("div-check")
+
+    let textcheck = document.createElement("p")
+    textcheck.textContent = "Usar cupon 10%"
+    textcheck.classList.add("text-check")
+    
+    let chekbox = document.createElement("input")
+    chekbox.type = "checkbox"
+    chekbox.classList.add("checkbox")
+    chekbox.setAttribute("id","checkbox")
+    chekbox.name = "micheckbox"
+
     let div = document.createElement("div")
     div.classList.add("container-btn")
 
     let boton = document.createElement("button")
     boton.classList.add("btn-car")
     boton.textContent = "Ver Ahorro"
+
 
     let resultadoAhorro = document.createElement("h5")
     resultadoAhorro.classList.add("price-new")
@@ -101,6 +115,9 @@ bdProductos.forEach(function (producto) {
     contenedor.appendChild(porcent)
     contenedor.appendChild(descripcion)
     contenedor.appendChild(precio)
+    contenedor.appendChild(diviciocheck)
+    diviciocheck.appendChild(chekbox)
+    diviciocheck.appendChild(textcheck)
     contenedor.appendChild(div)
     div.appendChild(boton)
     div.appendChild(resultadoAhorro)
@@ -132,40 +149,75 @@ function sacarDescuento(cantidad, desc) {
 
 let itemproducto = document.querySelector(".container__products") // este clase la tienen  todas las card y solo me reconoce la primera cards
 
- // buscando hijos
+//agregando descuentos diferentes a cada moto (producto)
+itemproducto.childNodes[1].childNodes[5].childNodes[1].textContent = "descuento 20%"
+itemproducto.childNodes[2].childNodes[5].childNodes[1].textContent = "descuento 40%"
+itemproducto.childNodes[5].childNodes[5].childNodes[1].textContent = "descuento 20%"
+
 
 //funciones para operar el descuento
 
-itemproducto.childNodes[1].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[1].childNodes[5].childNodes[1].textContent = sacarDescuento(12990000, 20) + " $Ahora"
+itemproducto.childNodes[1].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+
+    // condiciono buscando el hijo donde esta el cheked
+    if(itemproducto.childNodes[1].childNodes[5].childNodes[0].checked){   
+                                                            // llame la funcion dos veces               
+        itemproducto.childNodes[1].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[0].precio,bdProductos[0].descuento),20)+ " $Ahora"
+    }
+    else {
+      itemproducto.childNodes[1].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[0].precio,bdProductos[0].descuento) + " $Ahora"
+    }
 
 })
 
-itemproducto.childNodes[2].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[2].childNodes[5].childNodes[1].textContent = sacarDescuento(14990000, 30) + " $Ahora"
+itemproducto.childNodes[2].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+
+    if(itemproducto.childNodes[2].childNodes[5].childNodes[0].checked){
+        itemproducto.childNodes[2].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[1].precio,bdProductos[1].descuento),40)+ " $Ahora"
+    }
+    else{
+        itemproducto.childNodes[2].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[1].precio,bdProductos[1].descuento) + " $Ahora"
+    }
 
 })
 
-itemproducto.childNodes[3].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[3].childNodes[5].childNodes[1].textContent = sacarDescuento(25990000, 40) + " $Ahora"
+itemproducto.childNodes[3].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+    if(itemproducto.childNodes[3].childNodes[5].childNodes[0].checked){
+        itemproducto.childNodes[3].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[2].precio,bdProductos[2].descuento),10)+ " $Ahora"
+    }
+    else{
+        itemproducto.childNodes[3].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[2].precio,bdProductos[2].descuento) + " $Ahora"
+    }
 
 })
 
-itemproducto.childNodes[4].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[4].childNodes[5].childNodes[1].textContent = sacarDescuento(54990000, 50) + " $Ahora"
+itemproducto.childNodes[4].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+    if(itemproducto.childNodes[4].childNodes[5].childNodes[0].checked){
+        itemproducto.childNodes[4].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[3].precio,bdProductos[3].descuento),10)+ " $Ahora"
+    }
+    else{
+        itemproducto.childNodes[4].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[3].precio,bdProductos[3].descuento) + " $Ahora"
+    }
 
 })
 
-itemproducto.childNodes[5].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[5].childNodes[5].childNodes[1].textContent = sacarDescuento(59990000, 20) + " $Ahora"
+itemproducto.childNodes[5].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+    if(itemproducto.childNodes[5].childNodes[5].childNodes[0].checked){
+        itemproducto.childNodes[5].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[4].precio,bdProductos[4].descuento),20)+ " $Ahora"
+    }
+    else{
+        itemproducto.childNodes[5].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[4].precio,bdProductos[4].descuento) + " $Ahora"
+    }
 
 })
 
-itemproducto.childNodes[6].childNodes[5].childNodes[0].addEventListener("click", function (e) {
-    itemproducto.childNodes[6].childNodes[5].childNodes[1].textContent = sacarDescuento(99990000, 10) + " $Ahora"
+itemproducto.childNodes[6].childNodes[6].childNodes[0].addEventListener("click", function (e) {
+    if(itemproducto.childNodes[6].childNodes[5].childNodes[0].checked){
+        itemproducto.childNodes[6].childNodes[6].childNodes[1].textContent = sacarDescuento(sacarDescuento(bdProductos[5].precio,bdProductos[5].descuento),10)+ " $Ahora"
+    }
+    else{
+        itemproducto.childNodes[6].childNodes[6].childNodes[1].textContent = sacarDescuento(bdProductos[5].precio,bdProductos[5].descuento) + " $Ahora"
+    }
 
 })
-
-
-
 
