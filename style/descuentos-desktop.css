@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container-header {
@@ -16,7 +16,7 @@
 }
 
 .item__img {
-    width: 150px;
+    width:200px;
 }
 
 .item-header {
@@ -24,15 +24,15 @@
 }
 
 .title__discuento {
-    margin-top: 10px;
-    width: 100%;
+    margin-top:10px;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: rgb(153, 62, 189);
-    height: 90px;
-    font-size: 27px;
+    height:130px;
+    font-size:1.6rem;
     color: #FFFFFF;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
     -webkit-box-shadow: 0px 7px 13px -3px #444343;
@@ -59,19 +59,15 @@
 
 .img-producto {
     margin-top: 25px;
-    width: 150px;
+    width:300px;
 }
 
 
 .item__producto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
-    width: 500px;
-    padding:30px;
-    height: 500px;
+    width:400px;
+    padding:50px;
+    height:620px;
     border-radius: 20px;
     border-left: 10px rgb(201, 160, 218) solid;
     border-top: 10px rgb(201, 160, 218) solid;
@@ -90,23 +86,23 @@
 
 .container__main {
     display: flex;
-    width: 80vw;
+    width:70vw;
     align-items: center;
 }
 
 .fa-angles-left {
-    position: relative;
-    left: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: rgb(201, 160, 218);
-    font-size: 2rem;
+    font-size:3.5rem;
     text-shadow: 0 1px 0, 0 2px 0 rgb(228, 225, 225), 0 3px 0 rgb(154, 152, 152), 0 4px 0, 0 5px 0 rgb(154, 152, 152), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 .fa-angles-right {
-    position: relative;
-    left: 0px;
+    margin-right: 1rem;
+    margin-left: 1rem;
     color: rgb(201, 160, 218);
-    font-size: 2rem;
+    font-size:3.5rem;
     text-shadow: 0 1px 0, 0 2px 0 rgb(228, 225, 225), 0 3px 0 rgb(154, 152, 152), 0 4px 0, 0 5px 0 rgb(154, 152, 152), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
@@ -120,7 +116,7 @@
 
 
 .title__producto {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: transparent;
     background: #666666;
     -webkit-background-clip: text;
@@ -133,27 +129,28 @@
     margin-bottom: 1rem;
     font-weight: bold;
     color: #9f649f;
-    font-size: 1rem;
+    font-size: large;
 }
 
 .descripcion-producto {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #5e5a5d;
-    height: 80px;
+    height:50px;
 }
 
 .price {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom:30px;
     font-weight: bold;
-    color: #992699;
-    font-size: 17px;
+    color:#992699;
+    font-size:medium;
 }
 
-.price-new {
-    margin-left: 10px;
+.price-new{
+    margin-left:10px;
     font-weight: bold;
-    font-size: 15px;
-    color: #992699;
+    color:#992699;
+    font-size:medium;
 }
 
 .fa-percent {
@@ -163,24 +160,24 @@
 }
 
 .container__products {
-    margin-top: 10px;
+    margin-top:10px;
     overflow: hidden;
 }
 
 /*para centrar la flechas*/
 .container-flechas-productos {
     display: flex;
-    margin-bottom:3.5rem;
-    margin-top:2rem;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-btn {
     display: flex;
     margin-top: 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -191,128 +188,48 @@
     border-radius: 5px;
     color: #bcbcbc;
     font-family: monospace;
-    width: 100%;
+    width:30%;
 }
 
 .btn-car:hover {
     position: relative;
-    bottom: 5px;
+    bottom:5px;
     background-color: #cc2fa2;
     transition: background-color 1s ease;
     -webkit-box-shadow: 0px 0px 15px 0px #912e91;
     box-shadow: 0px 0px 15px 0px #992699;
 }
 
-
-.pie__pagina-title {
-    width: 100%;
-    font-weight: 800;
+.footer{
     display: flex;
-    font-size: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(176, 100, 209);
-    color: #d0d0d0;
-    height: 30px;
-}
-
-
-.img-footer {
-    width: 150px;
-    height:120px;
-    color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.item__footer-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container-redes {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.item__link {
-    margin: 1rem;
-    font-size:1.5rem;
-}
-
-/*redes sociales*/
-
-.fa-facebook-f {
-    color: blue;
-    font-weight: 900;
-}
-
-.fa-instagram {
-    color: rgb(214, 47, 125);
-    font-weight: 900;
-}
-
-.fa-youtube {
-    color: red;
-    font-weight: 900;
-}
-
-.contantainer-footer {
-    margin-top: 1rem;
-    padding:1rem;
-
-}
-
-.item__footer {
-    color: #616161;
-}
-
-.tituloprincipal {
-    font-size: 1rem;
-    margin-top:1rem;
-    margin-bottom: 15px;
-}
-
-.subtitulo {
-    font-size: 0.8rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.parrafo {
-    font-size: 0.7rem;
-}
-
-.contantainer-footer {
-    -webkit-box-shadow: -1px -1px 10px -2px #5c5a5a;
-    box-shadow: -1px -1px 10px -2px #5c5b5b;
+    justify-content: space-evenly;
 }
 
 .link-p{
-    font-size:0.8rem;
-    margin:1rem;
-    color: #494747;
+    font-size: 1.1rem;
+}
+
+.tituloprincipal{
+    font-size: 1.3rem;
+}
+
+.subtitulo{
+    font-size:1.1rem;
+}
+
+.parrafo{
+    font-size:1rem;
+}
+
+.img-footer{
+    width:200px;
+    height:200px;
+}
+
+.btn-car{
+    width:100px;
 }
 
 .img__metodo-pago{
-    width:40px;
-}
-
-.container__metodo-pago{
-    list-style: none;
-    display: flex;
-    width:60%;
-    flex-wrap: wrap;
-}
-
-.item__metodo-pago{
-    margin-right:0.5rem;
-}
-
-.ktm{
-    font-family:monospace;
-    text-align: center;
-    color:gray;
+    width:50px;
 }
