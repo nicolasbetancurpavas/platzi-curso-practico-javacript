@@ -347,7 +347,7 @@
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    text-shadow: 1px 0px 1px #888787, 0px 1px 1px #c2c1c1, 2px 1px 1px , 1px 2px 1px #c2c1c1, 3px 2px 1px #c2c1c1, 2px 3px 1px #c2c1c1, 4px 3px 1px #c2c1c1, 3px 4px 1px #c2c1c1, 5px 4px 1px #c2c1c1, 4px 5px 1px #c2c1c1, 6px 5px 1px #c2c1c1, 5px 6px 1px #c2c1c1, 7px 6px 1px #c2c1c1;
+    text-shadow: 1px 0px 1px #888787, 0px 1px 1px #c2c1c1, 1px 1px 1px , 1px 1px 1px #c2c1c1, 2px 1px 1px #c2c1c1, 1px 2px 1px #c2c1c1, 3px 2px 1px #c2c1c1, 2px 3px 1px #c2c1c1, 5px 4px 1px #c2c1c1, 4px 5px 1px #c2c1c1, 6px 5px 1px #c2c1c1, 5px 6px 1px #c2c1c1, 7px 6px 1px #c2c1c1;
     -webkit-box-shadow: -1px 0px 9px 0px #535151;
     box-shadow: -1px 0px 9px 0px #3c3c3c;
     border: 5px  #ab51ab solid;
