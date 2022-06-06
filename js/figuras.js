@@ -35,7 +35,7 @@ cuadrado.addEventListener("click", function (e) {
 
   // le bajo height al contenedor principal
   let main = document.getElementById("menu")
-  main.style.height = "300px"
+  main.style.height = "200px"
 
   // oculto otros resultados
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
@@ -100,7 +100,7 @@ circulo.addEventListener("click", function (e) {
 
   // le bajo height al contenedor principal
   let main = document.getElementById("menu")
-  main.style.height = "300px"
+  main.style.height = "220px"
 
   // borro resultados anteriores
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
@@ -170,6 +170,7 @@ triangulo.addEventListener("click", function (e) {
   // volver el height
   let main = document.getElementById("menu")
   main.style.height = "500px"
+  
 
   // borro resultados anteriores
   let resultadoPerimetro = document.getElementById("resultado-perimetro");
@@ -249,6 +250,7 @@ triangulo.addEventListener("click", function (e) {
   let btn = document.createElement("button");
   btn.textContent = "Calcular";
   btn.classList.add("btn-form-T");
+  btn.style.width="170px"
 
   label.appendChild(text)
   formulario.appendChild(label)
