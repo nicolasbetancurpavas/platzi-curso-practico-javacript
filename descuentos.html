@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Descuentos</title>
     <script src="https://kit.fontawesome.com/cd03ee7cfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/descuentos-style.css">
-    <link rel="stylesheet" href="style/descuentos-tablet.css" media="screen and (min-width:520px)"> 
-    <link rel="stylesheet" href="style/descuentos-desktop.css" media="screen and (min-width:800px)"> 
+    <link rel="stylesheet" href="style/descuentos-tablet.css" media="screen and (min-width:520px)">
+    <link rel="stylesheet" href="style/descuentos-desktop.css" media="screen and (min-width:800px)">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body id="body">
@@ -21,8 +26,8 @@
             <h2 class="item__title">APP discount</h2>
         </div>
     </header>
+
     <main>
-        <p class="cupon">No olvides checkear las casillas de cupones de descuento</p>
         <h2 class="title__discuento">Discounts on naked KTM motorcycles <i class="fa-solid fa-percent"></i></h2>
         <div class="container-flechas-productos">
             <a class="movent movent-left item" href="">
@@ -39,12 +44,33 @@
         </div>
     </main>
 
+    <section>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="contantainer-footer">
         <div class="footer">
             <div class="item__footer">
                 <h3 class="tituloprincipal">Canales de Atencion</h3>
-                <h4 class="subtitulo">linea de Atencion Gratuita  <i class="fa-solid fa-phone"></i></h4>
-                <p class="parrafo">01 8000 52 00 90</p>  
+                <h4 class="subtitulo">linea de Atencion Gratuita <i class="fa-solid fa-phone"></i></h4>
+                <p class="parrafo">01 8000 52 00 90</p>
                 <h4 class="subtitulo">Correo eletronico <i class="fa-solid fa-envelope"></i></h4>
                 <p class="parrafo">betancur10nicolas@gmail.com</p>
                 <h4 class="subtitulo">Linea etica <i class="fa-solid fa-mobile-retro"></i></h4>
@@ -52,9 +78,15 @@
             </div>
             <div class="item__footer">
                 <h3 class="tituloprincipal">Comprar Online</h3>
-                <a href="" class="link-p"><p>Como comprar online</p></a>
-                <a href="" class="link-p"><p>Politicas de compra online</p></a>
-                <a href="" class="link-p"><p>Como pagar online</p></a>
+                <a href="" class="link-p">
+                    <p class="p-f">Como comprar online</p>
+                </a>
+                <a href="" class="link-p">
+                    <p class="p-f">Politicas de compra online</p>
+                </a>
+                <a href="" class="link-p">
+                    <p class="p-f">Como pagar online</p>
+                </a>
             </div>
             <div class="item__footer">
                 <h3 class="tituloprincipal">Metodo de pago</h3>
@@ -63,12 +95,13 @@
                     <li class="item__metodo-pago"><img class="img__metodo-pago" src="img/efecty.png" alt=""></li>
                     <li class="item__metodo-pago"><img class="img__metodo-pago" src="img/mastercard.png" alt=""></li>
                     <li class="item__metodo-pago"><img class="img__metodo-pago" src="img/bancolombia.png" alt=""></li>
-                    <li class="item__metodo-pago"><img class="img__metodo-pago" src="img/bancodaviviend.png" alt=""></li>
+                    <li class="item__metodo-pago"><img class="img__metodo-pago" src="img/bancodaviviend.png" alt="">
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="item__footer-logo">
-            <img class="img-footer" src="img/ktm-racing-3421811-2854492.webp" alt="">
+            <img class="img-footer" src="img/icon-ktm_256.png" alt="">
             <h5 class="ktm">KTM descuentos%</h5>
             <ul class="container-redes sociales">
                 <li class="item__link"><i class="fa-brands fa-facebook-f"></i></li>
@@ -78,7 +111,12 @@
         </div>
     </footer>
     <p class="pie__pagina-title">® 2022 KTM , COLOMBIA,NICOLAS BETANCUR PAVAS</p>
+
     <script src="js/descuentos.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

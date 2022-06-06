@@ -12,7 +12,11 @@
 
 .img-producto {
     margin-top: 25px;
-    width:250px;
+    width:300px;
+}
+
+.title__producto{
+    font-weight: bold;
 }
 
 .descripcion-producto {
@@ -22,6 +26,11 @@
     font-size: 0.7rem;
     color: #5e5a5d;
     height: 80px;
+    margin:0;
+}
+
+.div-check{
+    margin: 0;
 }
 
 .desc{
@@ -32,8 +41,16 @@
     margin-bottom: 10px;
 }
 
+.container-btn{
+    margin: 0;
+}
+
 .btn-car{
-    width:100px;
+    width:80px;
+    height:60px;
+    font-size:0.7rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 .price-new{
@@ -50,4 +67,40 @@
 
 .parrafo{
     font-size:0.8rem;
+}
+
+.img-footer{
+    width:70px;
+    height:70px;
+}
+.ktm{
+    font-size:0.8rem;
+}
+
+.item__link{
+    margin-right:15px;
+}
+
+.container-redes{
+    padding:0;
+}
+.fa-brands{
+    font-size:1.2rem;
+}
+
+.contantainer-footer{
+    padding-bottom: 0px;
+}
+.container__metodo-pago{
+    padding:0;
+    width:25%;
+}
+
+.tituloprincipal{
+    margin:0;
+    margin-bottom:5px;
+}
+
+.p-f{
+    margin:0;
 }

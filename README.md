@@ -23,7 +23,19 @@
 
 -tercer crear funciones
 
-cuartos passos: integrar js con html
+-agregar traversing 
 
+- integrar js con html
 
+## taller 3 promedio, mediana y moda 
+
+-primero definir formulas
+
+-segundo paso:implementar la formulas en javascript
+
+-tercer crear funciones
+
+-agregar traversing 
+
+- integrar js con html
 

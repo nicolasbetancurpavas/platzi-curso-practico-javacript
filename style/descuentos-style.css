@@ -58,8 +58,8 @@
 }
 
 .img-producto {
-    margin-top: 25px;
-    width: 150px;
+    margin-top:15px;
+    width:160px;
 }
 
 
@@ -191,7 +191,9 @@
     border-radius: 5px;
     color: #bcbcbc;
     font-family: monospace;
-    width: 100%;
+    width:80px;
+    height:60px;
+    font-size:0.7rem;
 }
 
 .btn-car:hover {
@@ -217,13 +219,7 @@
 }
 
 
-.img-footer {
-    width: 150px;
-    height: 120px;
-    color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .item__footer-logo {
     display: flex;
@@ -351,4 +347,42 @@
     -webkit-box-shadow: -1px 0px 9px 0px #535151;
     box-shadow: -1px 0px 9px 0px #3c3c3c;
     border: 5px  #ab51ab solid;
+}
+
+.img-footer{
+    width:60px;
+    height:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ktm{
+    font-size:0.8rem;
+}
+
+.item__link{
+    margin-right:15px;
+}
+
+.container-redes{
+    padding:0;
+}
+.fa-brands{
+    font-size:1.2rem;
+}
+
+.contantainer-footer{
+    padding-bottom: 0px;
+}
+.container__metodo-pago{
+    padding:0;
+    width:25%;
+}
+
+.tituloprincipal{
+    margin:0;
+    margin-bottom:5px;
+}
+
+.p-f{
+    margin:0;
 }
