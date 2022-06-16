@@ -1,5 +1,5 @@
 // cuadrado
-const perimetroCuadrado = (lado) => "el perimetro de tu cuadrado es: " + lado * 4 + "cm";
+const perimetroCuadrado = (lado) => "el perimetro de tu cuadrado es: " + lado * 4 + "cm"; // el doble ** es elevacion
 const areaCuadrado = (lado) => "el area es de tu cuadrado es:" + lado ** 2 + "cm²";
 
 //triangulo
@@ -287,7 +287,6 @@ triangulo.addEventListener("click", function (e) {
 
     e.preventDefault();
   });
-
 
   e.preventDefault()
 
