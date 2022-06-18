@@ -15,17 +15,8 @@ function calcularMediaAritmetica(lista) {
 
   return promedioLista;
 }
-// metodo reduce con funcion en flecha 
-
-/*
-  let resultado = sueldos.reduce((sum, item) => {
-    return sum + item;
-}, 0);
-return resultado / sueldos.length;
- */
 
 //MEDIA
-
 const Mediana =(lista)=>{
   const esPar = (lista) => lista.length % 2 == 0
   const Mitad = parseInt(lista.length / 2)
@@ -43,3 +34,75 @@ const Mediana =(lista)=>{
   }
   return mediana
 }
+
+//MODA
+
+const MODA = (listica) =>{
+  const listaCount = {}
+  
+  //agregamos elementos al objecto donde esta el conteo de cada numero 
+  listica.map(
+    function(elemento){
+      if(listaCount[elemento]){
+        listaCount[elemento] += 1
+      }
+     else{
+      listaCount[elemento] = 1
+     }
+    }
+  ); 
+  //convertimos el objecto en una matriz que contiene mas arreglos y los ordenamos
+  const lista1Array = Object.entries(listaCount).sort(
+     comparation = (a,b) => a[1]-b[1] 
+  )
+  
+  const moda =lista1Array[lista1Array.length-1]
+  
+  let MODADEFINITIVA = "la moda es "+moda[0]+" y se repite "+moda[1]+" veces"
+  
+  return MODADEFINITIVA
+}
+
+//GENERO TRAVERSING 
+let botonGo =  document.getElementById("play")
+let baseFormulario = document.querySelector(".base-form")
+console.log(baseFormulario)
+console.log(botonGo)
+
+botonGo.addEventListener("click",function generarFormulario(e){
+
+  let header = document.querySelector(".container__header")
+  header.style.margin ="0px"
+
+  baseFormulario.innerHTML= ""
+
+  let title = document.createElement("h2")
+  title.classList.add("title-form")
+  title.textContent = "hola usuario bienvenido a nuestra app, esta app te permitira calcular la moda y la mediana de cualquier lista de nuemeros"
+
+  let form = document.createElement("form")
+  form.classList.add("form")
+  
+  let description = document.createElement("h4")
+  description.classList.add("description")
+  description.textContent="ingresar Numeros"
+
+  input = document.createElement("input")
+  input.classList.add("input")
+  input.placeholder='Ejemplo 1,2,1,2,3,4'
+  input.type= "text"
+  console.log(input) 
+
+  let btn = document.createElement("input")
+  btn.classList.add("btn-form")
+  btn.type= "submit"
+  console.log(btn) 
+
+  baseFormulario.appendChild(title)
+  baseFormulario.appendChild(form)
+  form.appendChild(description)
+  form.appendChild(input)
+  form.appendChild(btn)
+ 
+})
+
