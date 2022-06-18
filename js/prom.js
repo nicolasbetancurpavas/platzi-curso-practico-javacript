@@ -72,7 +72,7 @@ console.log(botonGo)
 botonGo.addEventListener("click",function generarFormulario(e){
 
   let header = document.querySelector(".container__header")
-  header.style.margin ="0px"
+  header.style.margin ="30px"
 
   baseFormulario.innerHTML= ""
 
