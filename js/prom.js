@@ -97,7 +97,7 @@ botonGo.addEventListener("click",function generarFormulario(e){
 
   let title = document.createElement("h2")
   title.classList.add("title-form")
-  title.textContent = "hola usuario bienvenido a nuestra app, esta app te permitira calcular la moda y la mediana de cualquier lista de nuemeros"
+  title.textContent = "hola usuario bienvenido a nuestra app, esta app te permitira calcular la moda y la mediana de cualquier lista de nuemeros, recuerda escribir una , por cada numero"
 
   let form = document.createElement("form")
   form.classList.add("form")

@@ -34,7 +34,7 @@ body {
 
 .title__header {
     font-weight: bold;
-    font-size: 2rem;
+    font-size:2.3rem;
     color: var(--colorprimario);
     text-shadow: 1.5px 1.5px #9a9999;
     width: 320px;
@@ -44,7 +44,7 @@ body {
 
 .title__header::first-letter {
     color: var(--colorsecundario);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 .GO {
@@ -75,7 +75,7 @@ body {
 
 .title-form {
     color: #939191;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1.5rem;
     font-weight: 600;
     margin: 0;
@@ -86,13 +86,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 5px var(--colorprimario) solid;
+    border: 7px var(--colorprimario) solid;
     border-radius: 10px;
     margin: 2rem;
     margin-top: 0px;
     padding:60px;
     -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
-    box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+    box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
 }
 
 .btn-form {
@@ -103,7 +103,7 @@ body {
 .description {
     margin-bottom:0.7rem;
     text-align: center;
-    font-size: 1rem;
+    font-size:1.3rem;
     font-weight: bold;
     color: var(--colorsecundario);
     text-shadow: 1px 1px rgb(129, 127, 127);
@@ -111,7 +111,7 @@ body {
 
 .input{
     width:170px;
-    height:40px;
+    height:60px;
     border:3px var(--subcolorsecundario) solid;
     border-radius:5px;
     color: var(--colorsecundario);
@@ -123,12 +123,13 @@ body {
 
 .btn-form{
     margin-top:1rem;
-    width:80px;
+    width:90px;
     background-color:transparent;
     color: var(--colorsecundario);
     font-weight: bold;
     border:2px var(--colorprimario) solid;
     border-radius:5px;
+    height:50px;
     -webkit-box-shadow: 4px 5px 7px -5px #4b4949;
     box-shadow: 4px 5px 7px -5px #4b4949;
 }
