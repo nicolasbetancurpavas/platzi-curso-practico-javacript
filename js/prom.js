@@ -36,6 +36,25 @@ const Mediana =(lista)=>{
 }
 
 //MODA
+let listicampp = [1,1,1,1,1,2,2,3,4,4,4,4]
+const listaCount = {}
+  
+//agregamos elementos al objecto donde esta el conteo de cada numero 
+listicampp.map(
+  function(elemento){
+    if(listaCount[elemento]){
+      listaCount[elemento] += 1
+    }
+   else{
+    listaCount[elemento] = 1
+   }
+  }
+); 
+//convertimos el objecto en una matriz que contiene mas arreglos y los ordenamos
+const lista1Array = Object.entries(listaCount).sort(
+   comparation = (a,b) => a[1]-b[1] 
+)
+console.log(lista1Array)
 
 const MODA = (listica) =>{
   const listaCount = {}
