@@ -15,6 +15,7 @@
 
 body {
     background-color: rgb(241, 243, 244);
+    font-size: 62.5%;
 }
 
 .container__header {
@@ -89,7 +90,7 @@ body {
     border-radius: 10px;
     margin: 2rem;
     margin-top: 0px;
-    padding:2.5rem;
+    padding:60px;
     -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
     box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
 }
