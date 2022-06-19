@@ -24,22 +24,23 @@ body {
     align-items: center;
     height: 200px;
     flex-wrap: wrap;
-    margin-top:250px;
+    margin-top: 250px;
 }
 
 .logo {
-    width:150px;
-    height:120px;
+    width: 150px;
+    height: 120px;
+
 }
 
 .title__header {
     font-weight: bold;
-    font-size:2.3rem;
+    font-size: 2.3rem;
     color: var(--colorprimario);
     text-shadow: 1.5px 1.5px #9a9999;
     width: 320px;
     text-align: center;
-    
+    width: 100%;
 }
 
 .title__header::first-letter {
@@ -90,7 +91,7 @@ body {
     border-radius: 10px;
     margin: 2rem;
     margin-top: 0px;
-    padding:60px;
+    padding: 35px;
     -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
     box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
 }
@@ -100,36 +101,129 @@ body {
     width: 50%;
 }
 
+
 .description {
-    margin-bottom:0.7rem;
+    width: 100%;
+    margin-bottom: 0.7rem;
     text-align: center;
-    font-size:1.3rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--colorsecundario);
     text-shadow: 1px 1px rgb(129, 127, 127);
 }
 
-.input{
-    width:170px;
-    height:60px;
-    border:3px var(--subcolorsecundario) solid;
-    border-radius:5px;
+.input {
+    width: 80%;
+    height: 60px;
+    border: 3px var(--subcolorsecundario) solid;
+    border-radius: 5px;
     color: var(--colorsecundario);
-}
-
-.input:hover{
-    background-color:rgb(225, 221, 221);
-}
-
-.btn-form{
-    margin-top:1rem;
-    width:90px;
-    background-color:transparent;
-    color: var(--colorsecundario);
-    font-weight: bold;
-    border:2px var(--colorprimario) solid;
-    border-radius:5px;
-    height:50px;
     -webkit-box-shadow: 4px 5px 7px -5px #4b4949;
     box-shadow: 4px 5px 7px -5px #4b4949;
 }
+
+.input:hover {
+    background-color: rgb(225, 221, 221);
+}
+
+.btn-form {
+    margin-top: 1rem;
+    width: 50%;
+    background-color: transparent;
+    color: var(--colorsecundario);
+    font-weight: bold;
+    border: 2px var(--colorprimario) solid;
+    border-radius: 5px;
+    height: 50px;
+    -webkit-box-shadow: 4px 5px 7px -5px #4b4949;
+    box-shadow: 4px 5px 7px -5px #4b4949;
+}
+
+.flecha {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #b5b3b3;
+}
+
+.text-result {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px rgb(28, 28, 28);
+}
+
+.fa-solid {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px rgb(28, 28, 28);
+}
+
+.resume-input {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #aba5a5;
+    text-shadow: 1px 1px black;
+}
+
+.container-result {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item__result-mediana {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 130px;
+    border: 4px var(--subcolorprimario) solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--colorprimario);
+    -webkit-box-shadow: 4px 5px 7px -5px #4b4949;
+    box-shadow: 4px 5px 7px -5px #4b4949;
+}
+
+.item__result-moda {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 130px;
+    border: 4px var(--subcolorsecundario) solid;
+    padding: 10px;
+    color: var(--colorsecundario);
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 5px 7px -5px #4b4949;
+    box-shadow: 4px 5px 7px -5px #4b4949;
+}
+
+.result-text {
+    width: 100%;
+    text-shadow: 1px 1px black;
+}
+
+.fa-arrows-down-to-people {
+    text-shadow: 1px 1px black;
+}
+
+.resultado-moda-text {
+    width: 100%;
+    text-shadow: 1px 1px black;
+}
+
+.result-mediana {
+    margin-top: 12px;
+    text-shadow: 1px 1px rgb(81, 80, 80);
+}
+
+.result-moda {
+    margin-top: 12px;
+    text-shadow: 1px 1px rgb(81, 80, 80);
+}
+

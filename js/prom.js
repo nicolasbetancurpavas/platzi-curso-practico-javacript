@@ -36,31 +36,12 @@ const Mediana =(lista)=>{
 }
 
 //MODA
-let listicampp = [1,1,1,1,1,2,2,3,4,4,4,4]
-const listaCount = {}
-  
-//agregamos elementos al objecto donde esta el conteo de cada numero 
-listicampp.map(
-  function(elemento){
-    if(listaCount[elemento]){
-      listaCount[elemento] += 1
-    }
-   else{
-    listaCount[elemento] = 1
-   }
-  }
-); 
-//convertimos el objecto en una matriz que contiene mas arreglos y los ordenamos
-const lista1Array = Object.entries(listaCount).sort(
-   comparation = (a,b) => a[1]-b[1] 
-)
-console.log(lista1Array)
-
 const MODA = (listica) =>{
+  let array = listica.split(",")
   const listaCount = {}
   
   //agregamos elementos al objecto donde esta el conteo de cada numero 
-  listica.map(
+  array.map(
     function(elemento){
       if(listaCount[elemento]){
         listaCount[elemento] += 1
@@ -77,7 +58,7 @@ const MODA = (listica) =>{
   
   const moda =lista1Array[lista1Array.length-1]
   
-  let MODADEFINITIVA = "la moda es "+moda[0]+" y se repite "+moda[1]+" veces"
+  let MODADEFINITIVA = moda[0]
   
   return MODADEFINITIVA
 }
@@ -91,13 +72,14 @@ console.log(botonGo)
 botonGo.addEventListener("click",function generarFormulario(e){
 
   let header = document.querySelector(".container__header")
-  header.style.margin ="30px"
+  
+  header.style.margin ="10px"
 
   baseFormulario.innerHTML= ""
 
   let title = document.createElement("h2")
   title.classList.add("title-form")
-  title.textContent = "hola usuario bienvenido a nuestra app, esta app te permitira calcular la moda y la mediana de cualquier lista de nuemeros, recuerda escribir una , por cada numero"
+  title.textContent = "hola usuario,esta app te permitira calcular la moda y la mediana de cualquier lista de nuemeros, recuerda escribir una , por cada numero"
 
   let form = document.createElement("form")
   form.classList.add("form")
@@ -123,5 +105,18 @@ botonGo.addEventListener("click",function generarFormulario(e){
   form.appendChild(input)
   form.appendChild(btn)
  
+
+  btn.addEventListener("click",function(e){
+    //mostrar vista resultado flecha
+    let textoresultado = document.querySelector(".flecha")
+    textoresultado.style.display="flex"    
+    
+    //resultado moda
+    let resultadoMODA = document.querySelector(".result-moda")
+
+    resultadoMODA.textContent = MODA(input.value)
+   e.preventDefault()
+  })  
+
 })
 
