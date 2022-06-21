@@ -210,7 +210,8 @@ body {
 
 .item__result-prom {
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top:20px;
+    margin-bottom:100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

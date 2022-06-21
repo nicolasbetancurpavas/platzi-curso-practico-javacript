@@ -5,7 +5,7 @@ function calcularMediaAritmetica(lista) {
   // metodo reduce recorre todo el arreglo
   const sumaLista = arreglo.reduce(
     (valorAcumulado, nuevoElemento) => {
-      return Number(valorAcumulado) + parseInt(nuevoElemento);
+      return Number(valorAcumulado) + Number(nuevoElemento);
     }
   )
   const promedioLista = sumaLista / arreglo.length;
@@ -14,23 +14,25 @@ function calcularMediaAritmetica(lista) {
 }
 
 //MEDIA
-
-  const MEDIANA = (lista) => {
-    let array = lista.split(",")
+   
+const MEDIANA = (lista) => {
+  
+  let array = lista.split(",")
+  const esPar = (list) => list.length % 2 === 0
     
     //ordenamos la lista 
     array.sort(
       comparation = (a,b) => a-b
     )
 
-    const esPar = (list) => list.length % 2 === 0
     const Mitad = parseInt(array.length / 2)
-  
+
     let mediana;
     if (esPar(array)){
       const elemento1 = array[Mitad-1]
       const elemento2 = array[Mitad]
-      mediana = calcularMediaAritmetica([ Number(elemento1),parseInt(elemento2)])
+     let sum  = Number(elemento1) + Number(elemento2)
+       mediana = sum / 2
     }
     
     else {
@@ -38,9 +40,9 @@ function calcularMediaAritmetica(lista) {
     }
 
     return mediana
-  }  
-  
+}
 
+    
 
 //MODA
 const MODA = (listica) =>{
@@ -85,7 +87,7 @@ botonGo.addEventListener("click",function generarFormulario(e){
 
   let title = document.createElement("h2")
   title.classList.add("title-form")
-  title.textContent = "esta app te permite calcular moda,mediana,promedio ,recuerda escribir una , por cada numero. Tambien tener presente que la lista se ordenara para un mejor calculo en casas de una lista de numero desordenada"
+  title.textContent = "esta app te permite calcular moda,mediana,promedio ,recuerda escribir una , por cada numero. Tambien tener presente que la lista se ordenara para un mejor calculo en casas de una lista de numero desordenada ADVERTENCIA SI NO DIGITAS MAS DE DOS ELEMENTOS NO TENDRAS RESULTADOS"
 
   let form = document.createElement("form")
   form.classList.add("form")
@@ -122,9 +124,22 @@ botonGo.addEventListener("click",function generarFormulario(e){
   div.appendChild(btn)
   div.appendChild(btnClean)
 
+  btnClean.addEventListener("click", function(){
+    let resultadoMODA = document.querySelector(".result-moda")
+    let resultadoMEDIANA = document.querySelector(".result-mediana")
+    let resultadoPROM = document.querySelector(".result-prom")
+
+    resultadoMEDIANA.textContent =""
+    resultadoMODA.textContent =""
+    resultadoPROM.textContent=""
+
+    input.value = ""
+
+  })
 
   btn.addEventListener("click",function(e){
     //mostrar vista resultado flecha
+   
     let textoresultado = document.querySelector(".flecha")
     textoresultado.style.display="flex"    
     
@@ -133,14 +148,14 @@ botonGo.addEventListener("click",function generarFormulario(e){
     let resultadoMEDIANA = document.querySelector(".result-mediana")
     let resultadoPROM = document.querySelector(".result-prom")
 
+    e.preventDefault()
     resultadoMODA.textContent = MODA(input.value)
     resultadoMEDIANA.textContent = MEDIANA(input.value)
     resultadoPROM.textContent = calcularMediaAritmetica(input.value)
-  
-   e.preventDefault()
+
   })  
 
-  btnClean.addEventListener("click",LIMPIAR = () => input.value = "" )
 
 })
+
 
