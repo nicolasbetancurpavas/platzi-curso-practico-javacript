@@ -24,7 +24,7 @@ body {
     align-items: center;
     height: 200px;
     flex-wrap: wrap;
-    margin-top: 250px;
+    margin-top:200px;
 }
 
 .logo {
@@ -76,7 +76,7 @@ body {
 
 .title-form {
     color: #939191;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 600;
     margin: 0;
