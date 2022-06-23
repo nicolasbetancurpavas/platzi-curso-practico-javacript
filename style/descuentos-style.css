@@ -219,8 +219,6 @@
 }
 
 
-
-
 .item__footer-logo {
     display: flex;
     flex-direction: column;
@@ -386,3 +384,4 @@
 .p-f{
     margin:0;
 }
+

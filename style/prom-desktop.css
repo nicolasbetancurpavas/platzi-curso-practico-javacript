@@ -1,0 +1,162 @@
+:root {
+    --colorprimario: #8ee9cc;
+    --subcolorprimario: #abd1c5;
+    --colorsecundario: rgb(204, 62, 78);
+    --subcolorsecundario: rgb(227, 120, 145);
+
+}
+
+.container_main{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.play_app{
+    display: flex;
+    width:50%;
+    align-items: center;
+}
+
+.result{
+    width:50%;
+    margin:0;
+    position: absolute;
+    bottom:200px;
+    align-items:center;
+}
+
+.item__result-prom{
+    margin:15px;
+}
+
+.form{
+    height:280px;
+}
+
+.form:hover{
+    transition: 1s;
+    -webkit-box-shadow: 5px 15px 5px 0px var(--colorsecundario), inset 5px 5px 8px 0px var(--subcolorsecundario), -1px -2px 8px -4px var(--subcolorsecundario);
+    box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 5px 5px 40px 0px var(--subcolorsecundario), -1px -2px 8px -5px var(--subcolorsecundario);
+}
+
+.item__result-mediana{
+    height:180px;
+}
+
+.item__result-mediana:hover{
+    transition:1s;
+    -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+    box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+}
+
+.item__result-moda{
+    height:145px;
+}
+
+.item__result-moda:hover{
+    transition:1s;
+    -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+    box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+}
+
+.item__result-prom{
+    height:170px;
+}
+
+.item__result-prom:hover{
+    transition:1s;
+    -webkit-box-shadow: 5px 5px 5px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+    box-shadow: 7px 7px 7px 0px var(--colorsecundario), inset 4px 4px 5px 0px var(--subcolorsecundario), -1px -2px 5px -5px var(--subcolorsecundario);
+}
+
+.container__header {
+    height:180px;
+}
+
+.logo {
+    width:160px;
+    height:140px;
+
+}
+
+.title__header{
+    font-size: 2.5rem;
+    text-shadow: 3px 3px rgb(128, 128, 128);
+}
+
+.GO {
+    font-size:2.4rem;
+    text-shadow: 3px 3px rgb(128, 128, 128);
+}
+
+.btn__play:hover{
+    background-color: var(--colorsecundario);
+    transition: background-color 1.2s ease;
+    
+}
+
+.btn__play:active{
+    background-color:  rgb(49, 49, 49);
+    transition: none;
+}
+
+.title-form{
+    color:var(--subcolorsecundario);
+    font-size:1rem;
+    text-shadow: 1.2px 1.2px rgb(128, 128, 128);
+}
+
+.description{
+    text-shadow: 1.6px 1.6px rgb(128, 128, 128);
+}
+
+.input{
+    font-size:1.3rem;
+    
+}
+
+.result-prom{
+    font-size:1.5rem;
+    text-shadow: 1.4px 1.4px rgb(87, 87, 87);
+}
+
+.result-mediana{
+    font-size: 1.5rem;
+    
+}
+
+.result-moda{
+    font-size:1.5rem; 
+}
+
+/*foooter*/
+
+.container-footer{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    bottom:0px;
+}
+
+.item-footer-r{
+    margin-left:40px;
+}
+
+.fa-brands{
+    font-size:1.6rem;
+    color: #8ee9cc;
+    text-shadow: 2px 2px rgb(118, 118, 118);
+}
+
+.item-footer__title{
+    font-size:1.6rem;
+    
+}
+.item-footer__title-r{
+    font-size:1.6rem;
+}

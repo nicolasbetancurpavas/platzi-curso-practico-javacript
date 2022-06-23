@@ -24,7 +24,7 @@ body {
     align-items: center;
     height: 200px;
     flex-wrap: wrap;
-    margin-top:100px;
+    margin-top:80px;
 }
 
 .logo {
@@ -143,12 +143,6 @@ body {
     box-shadow: 4px 5px 7px -5px #4b4949;
 }
 
-.flecha {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    color: #b5b3b3;
-}
 
 .text-result {
     font-size: 1.4rem;
@@ -171,6 +165,7 @@ body {
 .container-result {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     margin: 5px;
     padding: 5px;
@@ -211,7 +206,7 @@ body {
 .item__result-prom {
     margin-left: 10px;
     margin-top:20px;
-    margin-bottom:100px;
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -284,3 +279,65 @@ body {
     background: rgb(229, 64, 64);
 }
 
+/*FOOTER*/
+
+.container-footer{
+    margin-top:35px;
+    font-size:0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10px;
+    margin-right:10px;
+    text-align: center;
+}
+
+.item-footer__title{
+    font-size:1.3rem;
+    color: var(--colorprimario);
+    text-shadow: 1px 1px rgb(33, 33, 33);
+}
+.item-footer__title-r{
+    font-size:1.3rem;
+    color: var(--colorsecundario);
+    text-shadow: 1px 1px rgb(33, 33, 33);
+    margin:0;
+}
+
+.item-footer{
+    display: flex;
+    flex-direction: column;
+
+}
+.principal{
+    margin:0;
+}
+
+.container-redes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.item-redes{
+    margin:20px;
+}
+
+.fa-brands{
+    font-size:1.2rem;
+    color: #8ee9cc;
+    text-shadow: 2px 2px rgb(118, 118, 118);
+}
+
+.fa-linkedin:active{
+    color: rgb(54, 121, 208);
+}
+
+.fa-facebook-square:active{
+    color: rgb(54, 121, 208);
+}
+
+.fa-github-square:active{
+    color: #5c5b5b;
+}

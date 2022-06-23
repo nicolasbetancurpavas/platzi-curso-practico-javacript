@@ -81,7 +81,10 @@ console.log(botonGo)
 botonGo.addEventListener("click",function generarFormulario(e){
 
   let header = document.querySelector(".container__header")
+  let resultadomedian = document.querySelector(".result")
   
+  resultadomedian.style.position ="static"
+
   header.style.margin ="10px"
   baseFormulario.innerHTML= ""
 
@@ -138,11 +141,7 @@ botonGo.addEventListener("click",function generarFormulario(e){
   })
 
   btn.addEventListener("click",function(e){
-    //mostrar vista resultado flecha
-   
-    let textoresultado = document.querySelector(".flecha")
-    textoresultado.style.display="flex"    
-    
+        
     //resultados
     let resultadoMODA = document.querySelector(".result-moda")
     let resultadoMEDIANA = document.querySelector(".result-mediana")
@@ -157,5 +156,7 @@ botonGo.addEventListener("click",function generarFormulario(e){
 
 
 })
+
+
 
 
