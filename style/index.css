@@ -31,7 +31,7 @@
 .title__header {
     margin: 5px;
     color: var(--colorSecundario);
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 35px;
@@ -60,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
-    height: 400px;
+    height:500px;
     align-items: center;
     justify-content: center;
     background-color: var(--colorPrimario);
@@ -68,17 +68,18 @@
 }
 
 .img {
-    width: 90px;
-    height: 90px;
+    width:100px;
+    height:100px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .item-flex__main {
     text-align: center;
-    margin-right: 10px;
-    width: 44%;
-    height: 47%;
+    margin-right:10px;
+    margin-left:10px;
+    width: 40%;
+    height: 40%;
     border: 3px rgb(144, 171, 230) solid;
     border-radius: 20px;
     -webkit-box-shadow: -2px 4px 17px -5px rgb(117, 154, 233);
