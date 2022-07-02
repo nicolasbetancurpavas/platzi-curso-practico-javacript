@@ -2,10 +2,11 @@
 function calcularMediaAritmetica(lista) {
 
   let arreglo = lista.split(",") 
-  // metodo reduce recorre todo el arreglo
+
   const sumaLista = arreglo.reduce(
     (valorAcumulado, nuevoElemento) => {
       return Number(valorAcumulado) + Number(nuevoElemento);
+                        
     }
   )
   const promedioLista = sumaLista / arreglo.length;
@@ -42,8 +43,7 @@ const MEDIANA = (lista) => {
     return mediana
 }
 
-    
-
+  
 //MODA
 const MODA = (listica) =>{
   let array = listica.split(",")
@@ -56,7 +56,7 @@ const MODA = (listica) =>{
         listaCount[elemento] += 1
       }
      else{
-      listaCount[elemento] = 1
+      listaCount[elemento] = 1 
      }
     }
   ); 
@@ -82,7 +82,7 @@ botonGo.addEventListener("click",function generarFormulario(e){
 
   let header = document.querySelector(".container__header")
   let resultadomedian = document.querySelector(".result")
-  
+
   resultadomedian.style.position ="static"
 
   header.style.margin ="10px"
