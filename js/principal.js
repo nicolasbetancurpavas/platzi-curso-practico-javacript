@@ -2,9 +2,9 @@ let yinYang = document.getElementById("yin-yang")
 let baseMain = document.querySelector(".container__main")
 
 const dataBase = [
-    { nombre: "Figuras gometricas", imagen:  "../img/figuras.png", referencia:"../figuras.html"},
-    { nombre: "Descuentos", imagen: "../img/Descuentos.png", referencia:"../descuentos.html"},
-    { nombre: "Mediana,moda", imagen: "../img/salario.png", referencia:"../promedio.html"},
+    { nombre: "Figuras gometricas", imagen:  "../img/figuras.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/figuras.html"},
+    { nombre: "Descuentos", imagen: "../img/Descuentos.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/figuras.html"},
+    { nombre: "Mediana,moda", imagen: "../img/salario.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/promedio.html"},
     { nombre: "Salarios", imagen: "../img/mediana.png", referencia: "../salarios.html"} ,
 ]
 
