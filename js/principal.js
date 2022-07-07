@@ -2,10 +2,10 @@ let yinYang = document.getElementById("yin-yang")
 let baseMain = document.querySelector(".container__main")
 
 const dataBase = [
-    { nombre: "Figuras gometricas", imagen:  "../img/figuras.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/figuras.html"},
-    { nombre: "Descuentos", imagen: "../img/Descuentos.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/figuras.html"},
-    { nombre: "Mediana,moda", imagen: "../img/salario.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/promedio.html"},
-    { nombre: "Salarios", imagen: "../img/mediana.png", referencia: "../salarios.html"} ,
+    { nombre: "Figuras gometricas", imagen:  "https://cdn-icons-png.flaticon.com/128/3873/3873967.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/figuras.html"},
+    { nombre: "Descuentos", imagen: "http://ratecnologia.com.mx/wp-content/uploads/2021/10/Descuentos.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/descuentos.html"},
+    { nombre: "Mediana,moda", imagen: "https://cdn-icons-png.flaticon.com/128/1191/1191678.png", referencia:"https://nicolasbetancurpavas.github.io/platzi-curso-practico-javacript/promedio.html"},
+    { nombre: "Salarios", imagen: "https://cdn-icons-png.flaticon.com/128/6043/6043066.png", referencia: "../salarios.html"} ,
 ]
 
 

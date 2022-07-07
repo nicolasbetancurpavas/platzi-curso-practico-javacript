@@ -1,5 +1,5 @@
 :root {
-    --colorPrimario: rgb(81, 127, 205);
+    --colorPrimario: rgb(5, 19, 42);
     --colorSecundario: rgb(188, 197, 216) ;
     --colorblanco: rgb(188, 197, 216) ;
 
@@ -90,7 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 55px;
 }
 
 @keyframes rotation {
@@ -141,5 +141,9 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
+}
+
+.bi{
+    filter: drop-shadow(2px 2px 2px rgb(133, 133, 202));
 }
 
