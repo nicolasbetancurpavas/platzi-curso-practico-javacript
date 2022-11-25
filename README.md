@@ -2,6 +2,8 @@
 
 ..
 
+https://github.com/nicolasbetancurpavas/Img-Readme/tree/main/IMG/descuentos.jpg
+
 ## Taller #1 figuras geometricas
 
 -Primer paso: definir las formulas
