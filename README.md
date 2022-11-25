@@ -1,6 +1,6 @@
 # platzi-curso-practico-javacript
 
-![Image text](https://educutmxli.files.wordpress.com/2014/06/14.jpg?w=300&h=199)
+![Image text](https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/readmes%2Ffiguras.webp?alt=media&token=1e205558-beb1-4150-a47e-f560fbbdbaf4)
 
 ## Taller #1 figuras geometricas
 
@@ -28,6 +28,8 @@
 - integrar js con html
 
 ## taller 3 promedio, mediana y moda 
+
+![Image text](https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/readmes%2Fprom.jpg?alt=media&token=0bee5a41-41d1-47fd-9077-4b6e76b52e49)
 
 -primero definir formulas
 
