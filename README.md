@@ -1,8 +1,6 @@
 # platzi-curso-practico-javacript
 
-..
-
-https://github.com/nicolasbetancurpavas/Img-Readme/tree/main/IMG/descuentos.jpg
+![Image text](https://github.com/nicolasbetancurpavas/Img-Readme/tree/main/IMG/figuras.webp)
 
 ## Taller #1 figuras geometricas
 
